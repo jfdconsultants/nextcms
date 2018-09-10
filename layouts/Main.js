@@ -1,7 +1,7 @@
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
-import Subnav from '../components/Subnav.js'
-import Mainmenu from '../components/Mainmenu.js'
+import Header from '../components/framework/Header.js'
+import Footer from '../components/framework/Footer.js'
+import Subnav from '../components/framework/Subnav.js'
+import Mainmenu from '../components/framework/Mainmenu.js'
 
 export default ({children}) => (
     <div>
@@ -15,7 +15,7 @@ export default ({children}) => (
                 <Subnav />
               </div>
               <div class="col-sm-9">
-                { children }
+                {children}
               </div>
             </div>
           </div>
