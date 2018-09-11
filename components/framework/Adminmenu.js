@@ -4,7 +4,7 @@ const linkStyle = {
   marginRight: 15
 }
 
-const Mainmenu = () => (
+const Adminmenu = () => (
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">NextCMS</a>
@@ -14,14 +14,11 @@ const Mainmenu = () => (
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <Link href="/">
-            <a style={linkStyle}>Home</a>
+            <Link href="/admin">
+            <a style={linkStyle}>Dashboard</a>
             </Link>
-            <Link href="/about">
-            <a style={linkStyle}>About</a>
-            </Link>
-            <Link href="/contact-us">
-            <a style={linkStyle}>Contact us</a>
+            <Link href="/admin/pages">
+            <a style={linkStyle}>Pages</a>
             </Link>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -33,4 +30,4 @@ const Mainmenu = () => (
     </div>
 )
 
-export default Mainmenu
+export default Adminmenu

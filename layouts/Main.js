@@ -2,23 +2,22 @@ import Header from '../components/framework/Header.js'
 import Footer from '../components/framework/Footer.js'
 import Subnav from '../components/framework/Subnav.js'
 import Mainmenu from '../components/framework/Mainmenu.js'
+import {topPadding, border} from '../components/css/styles.js'
 
 export default ({children}) => (
     <div>
       <Header />
       <body>
       <Mainmenu />
-        <div class="container">
-          <div className="col-md-12">
+        <div className="container" style={topPadding}>
             <div className="row">
-              <div class="col-sm-3">
+              <div className="col-sm-3" style={border}>
                 <Subnav />
               </div>
-              <div class="col-sm-9">
+              <div className="col-sm-9" style={border}>
                 {children}
               </div>
             </div>
-          </div>
           <Footer />
         </div>
       </body>

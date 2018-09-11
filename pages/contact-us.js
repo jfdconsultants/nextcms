@@ -6,6 +6,7 @@ export default () => (
         <Head>
             <title>Contact us</title>
         </Head>
+        <h1>Contact us</h1>
         <p>This is the contact us page.</p>
     </Main>
 )

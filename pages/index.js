@@ -6,7 +6,9 @@ const Index = () => (
      <Head>
       <title>Welcome to the homepage</title>
     </Head>
+    <h1>Homepage</h1>
     <p>Welcome</p>
+    <p><a href="/admin">admin</a></p>
   </Main>
 )
 
